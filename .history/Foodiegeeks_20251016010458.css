@@ -15,7 +15,7 @@ a:active {
 
 
 header {
-    background-image: url('../foodiegeeksimgs/background\ header\ img.jpg');
+    background-image: url('./images/background\ header\ img.jpg');
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -41,7 +41,40 @@ header .container {
     position: relative;
     z-index: 2;
 }
+.navbar-brand img{
+    width: 30%;
+    height: 30px;;
+    border-radius: 50%;
+}
 
+
+section {
+    background-image: url('./images/background\ header\ img.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+section::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* backdrop-filter: blur(2px); */
+}
+
+section .container {
+    position: relative;
+    z-index: 2;
+}
 .header-content {
     margin-bottom: 150px;
     color: whitesmoke;
